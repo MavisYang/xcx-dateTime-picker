@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class='my_header'>
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='username'>
+      <view class='userinfo-nickName'>
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="row" bindtap='showDateModule'>
+  <text class="label">提醒时间：</text>
+  <text class="picker" wx:if='{{remindTime}}'>{{remindTime}}</text>
+  <text class="no_picker" wx:else>请选择提醒时间</text>
+  <datetime-picker 
+      dataStatus='{{dataStatus}}' 
+      dateValue="{{remindTime}}" 
+      startYear="{{startYear}}"
+      endYear="{{endYear}}"
+      bindclose='closeDateModule'></datetime-picker>
+</view>

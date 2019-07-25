@@ -1,0 +1,47 @@
+/**index.wxss**/
+.my_header {
+  position: relative;
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.my_header .userinfo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.my_header .userinfo-avatar {
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  width: 124rpx;
+  height: 124rpx;
+  border: 3px solid #ffffff;
+}
+
+.my_header .userinfo-nickName {
+  font-size: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 16rpx;
+}
+
+.row {
+  display: flex;
+  margin: 18rpx auto;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #333333;
+  font-size: 36rpx;
+}
+
+.no_picker {
+  color: #D1D1D1;
+}
