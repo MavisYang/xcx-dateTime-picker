@@ -36,7 +36,7 @@
 }
 
 /* 样式修改   */
-picker-view-column {
+picker-view-column.date-item {
   flex: none;
 }
 

@@ -12,6 +12,7 @@
       </view>
     </view>
   </view>
+  
   <view class="row" bindtap='showDateModule'>
     <text class="label">提醒时间：</text>
     <text class="picker" wx:if='{{remindTime}}'>{{remindTime}}</text>
@@ -19,4 +20,40 @@
     <datetime-picker dataStatus='{{dataStatus}}' dateValue="{{remindTime}}" startYear="{{startYear}}"
       endYear="{{endYear}}" bindclose='closeDateModule'></datetime-picker>
   </view>
+
+
+  <view class='form-list-item' bindtap='onYMDhms'>
+    <view class='form-item-name'>模式(YMDhms 2019-07-29 17:09:28)</view>
+    <text class='form-item-content color-desc'>{{yMDhms}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onYMDhm'>
+    <view class='form-item-name'>模式(YMDhm 2019-07-29 17:09)</view>
+    <text class='form-item-content color-desc'>{{yMDhm}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onYMD'>
+    <view class='form-item-name'>模式(YMD 2019-07-29)</view>
+    <text class='form-item-content color-desc'>{{yMD}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onMD'>
+    <view class='form-item-name'>模式(MD 07-29)</view>
+    <text class='form-item-content color-desc'>{{mD}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onHm'>
+    <view class='form-item-name'>模式(hm 17:09)</view>
+    <text class='form-item-content color-desc'>{{hm}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <date-picker bind:datePickerCancellEvent="datePickerCancellEvent" bind:datePickerOkEvent="datePickerOkEvent"
+    isShowDatePicker="{{isShowPicker}}" mode="{{mode}}" data="{{data}}" date="{{date}}">
+  </date-picker>
+
 </view>

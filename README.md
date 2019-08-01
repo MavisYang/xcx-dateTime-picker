@@ -1,4 +1,11 @@
-### 仿ios时间选择器（包括年月日星期 时分）
+
+
+- [年月日星期时分选择器](#年月日星期时分选择器)
+- [DatePicker年月日时分秒](#DatePicker年月日时分秒)
+
+### 年月日星期时分选择器
+
+#### 仿ios时间选择器（包括年月日星期 时分）
 
 引入组件`datetime-picker`,下面是时间选择器应用
 ```
@@ -60,6 +67,47 @@
   目前做到了限制年的选择: ` startYear:2019,//开始年  endYear:2050,//结束年`
   需改进的地方：能够限制年月日`2019-01-01`以这种格式显示 
   如果各位同仁有好的意见，可以留言哈～
+
+
+### [DatePicker年月日时分秒](https://github.com/binfy/DatePicker)
+
+详见`/component/date-picker`
+
+```
+  <view class='form-list-item' bindtap='onYMDhms'>
+    <view class='form-item-name'>模式(YMDhms 2019-07-29 17:09:28)</view>
+    <text class='form-item-content color-desc'>{{yMDhms}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onYMDhm'>
+    <view class='form-item-name'>模式(YMDhm 2019-07-29 17:09)</view>
+    <text class='form-item-content color-desc'>{{yMDhm}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onYMD'>
+    <view class='form-item-name'>模式(YMD 2019-07-29)</view>
+    <text class='form-item-content color-desc'>{{yMD}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onMD'>
+    <view class='form-item-name'>模式(MD 07-29)</view>
+    <text class='form-item-content color-desc'>{{mD}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <view class='form-list-item' bindtap='onHm'>
+    <view class='form-item-name'>模式(hm 17:09)</view>
+    <text class='form-item-content color-desc'>{{hm}}</text>
+    <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
+  </view>
+
+  <date-picker bind:datePickerCancellEvent="datePickerCancellEvent" bind:datePickerOkEvent="datePickerOkEvent"
+  isShowDatePicker="{{isShowPicker}}" mode="{{mode}}" data="{{data}}" date="{{date}}">
+</date-picker>
+```
 
 
 
