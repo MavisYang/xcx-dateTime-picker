@@ -24,7 +24,7 @@
 
   <view class='form-list-item' bindtap='onYMDhms'>
     <view class='form-item-name'>模式(YMDhms 2019-07-29 17:09:28)</view>
-    <text class='form-item-content color-desc'>{{yMDhms}}</text>
+    <view class='form-item-content color-desc'>{{yMDhms}}</view>
     <image class='form-left-arrow' mode='aspectFit' src='/images/left_icon.png'></image>
   </view>
 

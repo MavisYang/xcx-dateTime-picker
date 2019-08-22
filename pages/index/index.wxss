@@ -60,7 +60,7 @@
 
 .form-item-name {
   padding-left: 10px;
-  width: 90px;
+  width: 190px;
   min-width: 90px;
   justify-content: center;
   flex-shrink: 0;
